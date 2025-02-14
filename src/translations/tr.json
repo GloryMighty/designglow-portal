@@ -1,0 +1,48 @@
+
+{
+  "languages": {
+    "en": "İngilizce",
+    "tr": "Türkçe",
+    "ar": "Arapça"
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "destinations": "Destinasyonlar",
+    "contact": "İletişim"
+  },
+  "destinations": {
+    "istanbul": {
+      "title": "İstanbul",
+      "subtitle": "Doğu ile Batının Buluştuğu Yer",
+      "description": "İstanbul, iki kıta üzerine kurulu dünyadaki tek şehir olarak binlerce yıllık insan tarihinin tanığıdır. Dünya ticaretinin ve kültürünün merkezi olan İstanbul, ziyaretçilerine zamanda unutulmaz bir yolculuk sunuyor.",
+      "highlights": [
+        "Ayasofya",
+        "Sultan Ahmet Camii",
+        "Kapalı Çarşı",
+        "Boğaz"
+      ]
+    },
+    "cappadocia": {
+      "title": "Kapadokya",
+      "subtitle": "Güzel Atlar Diyarı",
+      "description": "Kapadokya'nın 'peri bacaları' ve kaya kiliseleriyle dolu gerçeküstü manzarası, bambaşka bir dünya deneyimi yaratıyor. Bölgenin benzersiz jeolojik özellikleri ve zengin tarihi, onu Türkiye'nin en büyüleyici destinasyonlarından biri yapıyor.",
+      "highlights": [
+        "Sıcak Hava Balonu Turları",
+        "Yeraltı Şehirleri",
+        "Mağara Oteller",
+        "Kaya Kiliseler"
+      ]
+    },
+    "antalya": {
+      "title": "Antalya",
+      "subtitle": "Akdeniz'in İncisi",
+      "description": "Antalya, antik kalıntıları ve modern lüksü tertemiz Akdeniz plajlarıyla birleştiriyor. Mükemmel iklimi ve zengin tarihi, hem dinlenme hem de kültürel keşif için ideal bir destinasyon yapıyor.",
+      "highlights": [
+        "Konyaaltı Plajı",
+        "Kaleiçi",
+        "Düden Şelaleleri",
+        "Antik Kentler"
+      ]
+    }
+  }
+}

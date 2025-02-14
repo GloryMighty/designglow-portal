@@ -1,0 +1,48 @@
+
+{
+  "languages": {
+    "en": "English",
+    "tr": "Turkish",
+    "ar": "Arabic"
+  },
+  "navigation": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "contact": "Contact"
+  },
+  "destinations": {
+    "istanbul": {
+      "title": "Istanbul",
+      "subtitle": "Where East Meets West",
+      "description": "Istanbul, the only city in the world built on two continents, stands as a testament to thousands of years of human history. A center of world trade and culture, Istanbul offers visitors an unforgettable journey through time.",
+      "highlights": [
+        "Hagia Sophia",
+        "Blue Mosque",
+        "Grand Bazaar",
+        "Bosphorus Strait"
+      ]
+    },
+    "cappadocia": {
+      "title": "Cappadocia",
+      "subtitle": "Land of Beautiful Horses",
+      "description": "Cappadocia's surreal landscape of 'fairy chimneys' and cave churches creates an otherworldly experience. The region's unique geological features and rich history make it one of Turkey's most fascinating destinations.",
+      "highlights": [
+        "Hot Air Balloon Rides",
+        "Underground Cities",
+        "Cave Hotels",
+        "Rock Churches"
+      ]
+    },
+    "antalya": {
+      "title": "Antalya",
+      "subtitle": "Pearl of the Mediterranean",
+      "description": "Antalya combines pristine Mediterranean beaches with ancient ruins and modern luxury. Its perfect climate and rich history make it an ideal destination for both relaxation and cultural exploration.",
+      "highlights": [
+        "Konyaaltı Beach",
+        "Old Harbor",
+        "Düden Waterfalls",
+        "Ancient Ruins"
+      ]
+    }
+  }
+}
