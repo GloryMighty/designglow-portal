@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const destinations = [
+export const destinations = [
   {
     title: "Istanbul",
     description: "Where East meets West, ancient meets modern",
