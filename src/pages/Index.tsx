@@ -1,5 +1,6 @@
 
 import { useEffect } from "react";
+import Toolbar from "../components/Toolbar";
 import HeroSection from "../components/sections/HeroSection";
 import DestinationsSection from "../components/sections/DestinationsSection";
 import ExperiencesSection from "../components/sections/ExperiencesSection";
@@ -33,6 +34,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-soft-gray">
+      <Toolbar className="bg-transparent" />
       <HeroSection />
       <DestinationsSection />
       <ExperiencesSection />
