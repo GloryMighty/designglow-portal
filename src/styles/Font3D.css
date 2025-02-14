@@ -1,0 +1,33 @@
+/*
+  File: Font3D.css
+  Description: This file defines a wonderful unique 3D styling font appropriate for our touristic application. 
+  The styles here are designed to be reusable across all pages, specifically for titles.
+  We use text-shadow layers and 3D transforms to offer a vibrant, eye-catching effect.
+
+  Instructions to use:
+  1. Import this file in your main CSS or component files.
+  2. Use the class 'three-d-title' in your title elements in your React or HTML code.
+
+  Author: Slava
+  Date: 2025-02-14
+*/
+
+.three-d-title {
+  /* Base font styling */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+
+  /* 3D Effect using text shadow layering */
+  text-shadow:
+    1px 1px 0 rgba(0, 0, 0, 0.2),
+    2px 2px 0 rgba(0, 0, 0, 0.2),
+    3px 3px 0 rgba(0, 0, 0, 0.2),
+    4px 4px 0 rgba(0, 0, 0, 0.2);
+  
+  /* Subtle perspective transform for 3D look */
+  transform: perspective(800px) rotateX(10deg);
+}

@@ -12,7 +12,7 @@ const destinations = [
   {
     title: "Cappadocia",
     description: "Magical landscapes and hot air balloon adventures",
-    image: "https://images.unsplash.com/photo-1570854009466-78800d0c743a",
+    image: "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/03/capadocia_888_3.jpg",
     tags: ["Nature", "Adventure", "Unique"],
   },
   {
@@ -24,13 +24,13 @@ const destinations = [
   {
     title: "Pamukkale",
     description: "Natural thermal springs and ancient ruins",
-    image: "https://images.unsplash.com/photo-1590323771717-06b44bb5c9f3",
+    image: "https://images.izmirburaya.com/Images/Deals/1200x1200/4f6023c7-aead-4daa-b2cc-1246d8ffb918.jpg",
     tags: ["Natural", "Thermal", "Historical"],
   },
   {
     title: "Ephesus",
     description: "Ancient Roman city and archaeological wonder",
-    image: "https://images.unsplash.com/photo-1583146559760-a5a5a146f5c0",
+    image: "https://www.kusadasi.biz/_astro/t_ephesus-1.C67GQm7V.jpg",
     tags: ["Archaeological", "Historical", "Cultural"],
   },
   {
