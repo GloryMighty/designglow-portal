@@ -9,9 +9,6 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-[url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200')] bg-cover bg-center">
       <div className="absolute inset-0 bg-black bg-opacity-50" />
-      <div className="absolute top-4 right-4 z-20">
-        <LanguageSelector />
-      </div>
       <div className="container mx-auto px-4 text-center relative z-10">
         <span className="text-accent inline-block mb-4 font-medium tracking-wider animate-fade-in">
           {t("hero.welcome")}

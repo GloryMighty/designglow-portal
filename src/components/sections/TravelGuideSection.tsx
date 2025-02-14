@@ -1,5 +1,7 @@
-import { Calendar, Globe } from "lucide-react";
+import { Calendar, Globe, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { AnimatedIcon } from "../ui/AnimatedIcon";
 
 const TravelGuideSection = () => {
   const { t } = useTranslation();
@@ -11,17 +13,25 @@ const TravelGuideSection = () => {
           Travel Guide
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          <div className="animate-on-scroll opacity-0">
-            <Calendar className="w-8 h-8 text-accent mb-4" />
-            <h3 className="text-xl font-playfair mb-4">{t("travelGuide.bestTime")}</h3>
+          <div className="animate-on-scroll opacity-0 md:col-start-1">
+            <AnimatedIcon 
+              Icon={Calendar} 
+              size={8} 
+              className="mb-4"
+            />
+            <h3 className="text-xl font-playfair mb-4 mt-4">{t("travelGuide.bestTime")}</h3>
             <p className="text-gray-600">
               {t("travelGuide.bestTimeDesc")}
             </p>
           </div>
-          <div className="animate-on-scroll opacity-0 delay-100">
-            <Globe className="w-8 h-8 text-accent mb-4" />
-            <h3 className="text-xl font-playfair mb-4">{t("travelGuide.gettingAround")}</h3>
-            <p className="text-gray-600">
+          <div className="animate-on-scroll opacity-0 delay-100 md:col-start-2 flex flex-col items-end">
+            <AnimatedIcon 
+              Icon={MapPin} 
+              size={8} 
+              className="mb-4"
+            />
+            <h3 className="text-xl font-playfair mb-4 mt-4 text-right">{t("travelGuide.gettingAround")}</h3>
+            <p className="text-gray-600 text-right">
               {t("travelGuide.gettingAroundDesc")}
             </p>
           </div>

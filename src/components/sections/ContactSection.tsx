@@ -5,37 +5,48 @@ const ContactSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 bg-soft-gray">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-playfair text-center mb-16 animate-on-scroll opacity-0 title-3d">
+    <section 
+      className="py-20 bg-soft-gray relative" 
+      style={{
+        backgroundImage: `url('https://media.restless.co.uk/uploads/2024/05/kas.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        position: 'relative'
+      }}
+    >
+      {/* Semi-transparent overlay to improve text readability */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <h2 className="text-3xl md:text-4xl font-playfair text-center mb-16 animate-on-scroll opacity-100 title-3d text-white">
           {t("contact.title")}
         </h2>
         <div className="max-w-lg mx-auto">
-          <form className="space-y-6 animate-on-scroll opacity-0">
+          <form className="space-y-6 animate-on-scroll opacity-90">
             <div>
               <input
                 type="text"
                 placeholder={t("contact.namePlaceholder")}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-accent transition-colors"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-accent transition-colors bg-white/90"
               />
             </div>
             <div>
               <input
                 type="email"
                 placeholder={t("contact.emailPlaceholder")}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-accent transition-colors"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-accent transition-colors bg-white/90"
               />
             </div>
             <div>
               <textarea
                 placeholder={t("contact.messagePlaceholder")}
                 rows={4}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-accent transition-colors"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-accent transition-colors bg-white/90"
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-accent text-white py-3 rounded-lg hover:bg-soft-black transition-colors duration-300 flex items-center justify-center gap-2"
+              className="w-full bg-black text-white py-3 rounded-lg hover:bg-soft-black transition-colors duration-300 flex items-center justify-center gap-2 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] focus:outline-accent"
             >
               {t("contact.submit")}
               <Phone className="w-4 h-4" />

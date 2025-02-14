@@ -66,7 +66,7 @@ const DestinationsSection = () => {
                 <div className="text-white text-center p-6">
                   <h3 className="text-2xl font-playfair mb-2">{destination.title}</h3>
                   <p className="text-sm mb-4">{destination.description}</p>
-                  <div className="flex flex-wrap gap-2 justify-center">
+                  <div className="text-black flex flex-wrap gap-2 justify-center">
                     {destination.tags.map((tag) => (
                       <span key={tag} className="px-3 py-1 bg-accent rounded-full text-sm">
                         {tag}
