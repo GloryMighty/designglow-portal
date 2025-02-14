@@ -30,6 +30,22 @@ This documentation is broken into modular files to maintain simplicity and clari
 5. Visual Journey: Photographic exploration of Turkey
 6. Contact/Inquiry Section
 
+## Routing Strategy
+### Destination Pages
+- Route Pattern: `/destinations/:id`
+- Supported Destinations:
+  - Istanbul
+  - Cappadocia
+  - Antalya
+  - Pamukkale
+  - Ephesus
+  - Black Sea
+
+### Dynamic Routing Features
+- Lowercase, space-insensitive destination matching
+- Fallback for unknown destinations
+- Consistent translation and image mapping
+
 ## Technical Stack
 - Frontend: React
 - Build Tool: Vite
@@ -48,6 +64,21 @@ This documentation is broken into modular files to maintain simplicity and clari
 - Reusable, modular component architecture
 - Accessibility and inclusive design
 - SEO-friendly implementation
+
+## Recent Updates
+- Implemented dynamic destination routing
+- Enhanced translation support for destinations
+- Improved destination page rendering
+- Added fallback mechanisms for destination content
+
+## Testing Checklist
+### Destination Page Validation
+1. Verify each destination loads correctly
+2. Check URL routing (`/destinations/:id`)
+3. Validate translation content
+4. Ensure image display
+5. Test responsive design
+6. Confirm animation effects
 
 ## Icon Design Philosophy
 - Use semantically meaningful icons that represent the content
