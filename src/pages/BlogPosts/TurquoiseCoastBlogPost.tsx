@@ -16,7 +16,7 @@ const TurquoiseCoastBlogPost: React.FC = () => {
           The Turquoise Coast: Turkey's Mediterranean Paradise
         </h1>
         <img 
-          src="/images/turquoise-coast.jpg" 
+          src="https://cxgveiouca.cloudimg.io/familyhotelfinder.com/wp-content/uploads/Turkey-Turquoise-Coast-destination24-SH.jpg?w=960&h=540&func=cover" 
           alt="Turquoise Coast" 
           className="w-full h-96 object-cover rounded-lg mb-8"
         />

@@ -33,7 +33,7 @@ One of the most iconic experiences in Cappadocia is the sunrise hot air balloon 
 The region is also rich in history and culture. The Göreme Open Air Museum, a UNESCO World Heritage site, showcases Byzantine-era rock-cut churches adorned with stunning frescoes. These churches, hidden within the rocky landscape, tell stories of early Christian communities that found refuge in this remarkable terrain.
 
 For travelers seeking an experience that transcends typical tourism, Cappadocia offers a journey through geological time, human history, and natural beauty. It's a destination that challenges your perception of what a landscape can be.`,
-    imageUrl: "/images/cappadocia-landscape.jpg",
+    imageUrl: "https://www.dailycappadociatour.com/wp-content/uploads/slider4/2-dias-1-noche-capadocia-tour.jpg",
     readTime: 5,
     route: "/guide/cappadocia"
   },
@@ -52,7 +52,7 @@ Beyond monuments, Istanbul's soul lives in its bazaars and markets. The Grand Ba
 Modern Istanbul pulses with creativity and innovation. Neighborhoods like Beyoğlu showcase contemporary art galleries, cutting-edge restaurants, and a vibrant nightlife that rivals any global metropolis. Street art adorns historical walls, young entrepreneurs run innovative startups, and traditional tea houses sit comfortably beside trendy cafes.
 
 Culinary experiences in Istanbul are a journey through flavors. From street vendors selling simit (circular sesame bread) to sophisticated restaurants reimagining Ottoman cuisine, the city is a gastronomic paradise that reflects its multicultural heritage.`,
-    imageUrl: "/images/istanbul-skyline.jpg",
+    imageUrl: "https://cdnuploads.aa.com.tr/uploads/Contents/2024/05/03/thumbs_b_c_d09ebaa48d4181a43c143f53b35bcba0.jpg?v=112927",
     readTime: 6,
     route: "/guide/istanbul"
   },
@@ -71,7 +71,7 @@ The town of Kaş epitomizes the region's charm. With its narrow cobblestone stre
 For nature lovers, the region offers diverse experiences. The Butterfly Valley near Fethiye is a protected natural wonder, home to hundreds of butterfly species. Hiking the Lycian Way, one of the world's most beautiful long-distance walking routes, allows travelers to experience the region's diverse landscapes, from mountain trails to coastal paths.
 
 The Turquoise Coast isn't just a destination; it's a sensory experience that combines natural beauty, historical depth, and the warm hospitality of Turkish culture.`,
-    imageUrl: "/images/turquoise-coast.jpg",
+    imageUrl: "https://adventurefolio.com/wp-content/uploads/2022/05/Alanya-Turkey-min.png",
     readTime: 5,
     route: "/guide/turquoise-coast"
   },
@@ -90,7 +90,7 @@ Meze culture represents the social heart of Turkish dining. These small, flavorf
 Desserts in Turkish cuisine are an art form. Baklava, with its layers of thin pastry, nuts, and sweet syrup, varies by region. In the southeast, pistachio baklava reigns supreme, while in other areas, walnut or almond versions are preferred. Turkish delight (lokum) and künefe, a cheese-based dessert, showcase the complexity of Turkish sweet traditions.
 
 Street food offers another dimension of Turkish culinary experience. Simit (sesame-crusted bread rings), börek (layered pastries), and döner are not just quick meals but cultural institutions. Each bite tells a story of regional ingredients, cooking techniques passed through generations, and the communal spirit of Turkish society.`,
-    imageUrl: "/images/turkish-cuisine.jpg",
+    imageUrl: "https://images.deliveryhero.io/image/fd-tr/LH/fn8c-listing.jpg",
     readTime: 6,
     route: "/guide/culinary-journey"
   },
@@ -111,7 +111,7 @@ Sustainable agriculture is another crucial aspect of Turkey's environmental stra
 Marine conservation efforts are particularly notable along the Turkish coast. Programs focused on protecting sea turtle habitats, coral reefs, and marine ecosystems demonstrate a holistic approach to environmental preservation. Responsible diving and boat tour operators play a crucial role in these conservation efforts.
 
 Turkey's approach to sustainable tourism goes beyond environmental considerations. It's about creating meaningful connections between travelers, local communities, and the rich cultural and natural landscapes that make the country unique.`,
-    imageUrl: "/images/sustainable-tourism.jpg",
+    imageUrl: "https://cdn.travelatelier.com/wp-content/uploads/2016/08/sustainable-tourism-development-turkey.jpg",
     readTime: 5,
     route: "/guide/sustainable-tourism"
   }
@@ -138,7 +138,7 @@ const Guide = () => {
         <Toolbar />
         
         <div className="container mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
+          <h1 className="title-3d text-4xl font-bold text-center mb-12 text-gray-800">
             <br />
             Discover Turkey: A Comprehensive Travel Guide
           </h1>

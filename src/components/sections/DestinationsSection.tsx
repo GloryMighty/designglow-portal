@@ -52,7 +52,7 @@ const DestinationsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {destinations.map((destination, index) => (
             <Link
-              to={`/destination/${destination.title.toLowerCase()}`}
+              to={`/destinations/${destination.title.toLowerCase()}`}
               key={destination.title}
               className="group relative overflow-hidden rounded-lg animate-on-scroll opacity-0"
               style={{ animationDelay: `${index * 100}ms` }}

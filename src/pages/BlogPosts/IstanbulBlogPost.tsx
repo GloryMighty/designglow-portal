@@ -16,7 +16,7 @@ const IstanbulBlogPost: React.FC = () => {
           Istanbul: Where Continents and Cultures Converge
         </h1>
         <img 
-          src="/images/istanbul-skyline.jpg" 
+          src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Modern_Istanbul_skyline.jpg" 
           alt="Istanbul Skyline" 
           className="w-full h-96 object-cover rounded-lg mb-8"
         />

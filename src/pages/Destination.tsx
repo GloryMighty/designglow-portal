@@ -1,8 +1,17 @@
-
 import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, MapPin, Calendar, Info } from "lucide-react";
+
+// Add all destination images
+const images: Record<string, string> = {
+  istanbul: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b",
+  cappadocia: "https://images.unsplash.com/photo-1570854009466-78800d0c743a",
+  antalya: "https://images.unsplash.com/photo-1542051841857-5f90071e7989",
+  pamukkale: "https://images.unsplash.com/photo-1558888400-4a8cde7b6e9f",
+  ephesus: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf",
+  blacksea: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+};
 
 const Destination = () => {
   const { id } = useParams<{ id: string }>();
@@ -12,21 +21,21 @@ const Destination = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  if (!id || !["istanbul", "cappadocia", "antalya"].includes(id)) {
+  // Convert id to lowercase and handle multi-word destinations
+  const normalizedId = id ? id.toLowerCase().replace(/\s+/g, '') : '';
+
+  // Check if the destination exists in translations
+  const destinationExists = t(`destinations.${normalizedId}`, { fallbackValue: null }) !== null;
+
+  if (!normalizedId || !destinationExists) {
     return <div>Destination not found</div>;
   }
 
-  const destination = t(`destinations.${id}`, { returnObjects: true }) as {
+  const destination = t(`destinations.${normalizedId}`, { returnObjects: true }) as {
     title: string;
     subtitle: string;
     description: string;
     highlights: string[];
-  };
-
-  const images: Record<string, string> = {
-    istanbul: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b",
-    cappadocia: "https://images.unsplash.com/photo-1570854009466-78800d0c743a",
-    antalya: "https://images.unsplash.com/photo-1542051841857-5f90071e7989"
   };
 
   return (
@@ -34,7 +43,7 @@ const Destination = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] overflow-hidden">
         <img
-          src={images[id]}
+          src={images[normalizedId] || "https://via.placeholder.com/1600x900"}
           alt={destination.title}
           className="w-full h-full object-cover"
         />

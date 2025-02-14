@@ -16,7 +16,7 @@ const SustainableTourismBlogPost: React.FC = () => {
           Sustainable Tourism in Turkey: Preserving Natural and Cultural Heritage
         </h1>
         <img 
-          src="/images/sustainable-tourism.jpg" 
+          src="https://visitturkey.in/wp-content/uploads/2024/07/sustainable-tourism-in-turkey-1024x1024.webp" 
           alt="Sustainable Tourism" 
           className="w-full h-96 object-cover rounded-lg mb-8"
         />

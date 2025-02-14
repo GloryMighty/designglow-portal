@@ -16,7 +16,7 @@ const CulinaryJourneyBlogPost: React.FC = () => {
           Culinary Journey: The Rich Flavors of Turkish Cuisine
         </h1>
         <img 
-          src="/images/turkish-cuisine.jpg" 
+          src="https://deraliyerestaurant.com/wp-content/uploads/2024/05/geleneksel-turk-yemekleri.jpg" 
           alt="Turkish Cuisine" 
           className="w-full h-96 object-cover rounded-lg mb-8"
         />
