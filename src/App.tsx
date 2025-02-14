@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,6 +11,7 @@ import Contact from "./pages/Contact";
 import Destination from "./pages/Destination";
 import NotFound from "./pages/NotFound";
 import "./i18n";
+import "./styles/Font3D.css";
 
 const queryClient = new QueryClient();
 

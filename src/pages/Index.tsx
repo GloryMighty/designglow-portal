@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Toolbar from "../components/Toolbar";
 import HeroSection from "../components/sections/HeroSection";
@@ -35,11 +34,11 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-soft-gray">
       <Toolbar className="bg-transparent" />
-      <HeroSection />
-      <DestinationsSection />
-      <ExperiencesSection />
-      <TravelGuideSection />
-      <ContactSection />
+      <HeroSection className="three-d-title" />
+      <DestinationsSection className="three-d-title" />
+      <ExperiencesSection className="three-d-title" />
+      <TravelGuideSection className="three-d-title" />
+      <ContactSection className="three-d-title" />
       <footer className="py-8 text-center text-gray-600 bg-white">
         <p>&copy; {new Date().getFullYear()} Turkish Tourism. All rights reserved.</p>
       </footer>
