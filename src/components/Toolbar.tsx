@@ -1,8 +1,8 @@
-
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
 import { cn } from "@/lib/utils";
+import "../styles/LogoTitle3D.css";
 
 const Toolbar = ({ className }: { className?: string }) => {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ const Toolbar = ({ className }: { className?: string }) => {
     )}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-playfair text-accent hover:text-accent/80 transition-colors">
+          <Link to="/" className="text-2xl font-playfair text-accent hover:text-accent/80 transition-colors logo-title-3d">
             Turkish Tourism
           </Link>
           
