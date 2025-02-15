@@ -64,7 +64,7 @@ const Destinations = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredDestinations.map((destination, index) => (
             <Link
-              to={`/destination/${destination.title.toLowerCase()}`}
+              to={`/destinations/${destination.title.toLowerCase()}`}
               key={destination.title}
               className="group relative overflow-hidden rounded-lg shadow-lg transform transition-transform hover:scale-105"
               style={{ animationDelay: `${index * 100}ms` }}
@@ -89,6 +89,9 @@ const Destinations = () => {
                             {t(`destinations.destinationTags.${tag}`)}
                           </span>
                         ))}
+                    </div>
+                    <div className="text-white text-center mt-2">
+                      <p className="text-lg font-bold">{t('destinations.priceLabel', { price: `$${destination.price}` })}</p>
                     </div>
                   </div>
                 </div>

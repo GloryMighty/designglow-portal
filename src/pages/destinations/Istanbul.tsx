@@ -10,7 +10,8 @@ const Istanbul = () => {
     highlights: ["Historic Sultanahmet", "The Bosphorus Strait", "Grand Bazaar"],
     image: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b",
     bestTime: "Spring and Autumn are ideal for exploring Istanbul.",
-    tips: "Take a Bosphorus cruise and indulge in local Turkish delights."
+    tips: "Take a Bosphorus cruise and indulge in local Turkish delights.",
+    price: 700
   };
   return <DestinationLayout {...props} />;
 };

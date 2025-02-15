@@ -14,10 +14,11 @@ interface DestinationLayoutProps {
   image: string;
   bestTime: string;
   tips: string;
+  price?: number; // Optional price field
 }
 
 const DestinationLayout = (props: DestinationLayoutProps) => {
-  const { title, subtitle, description, highlights, image, bestTime, tips } = props;
+  const { title, subtitle, description, highlights, image, bestTime, tips, price = 750 } = props; // Default price to 750
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -78,6 +79,11 @@ const DestinationLayout = (props: DestinationLayoutProps) => {
                 <Info className="w-6 h-6 text-accent mb-4" />
                 <h3 className="text-xl font-playfair mb-3">Local Tips</h3>
                 <p className="text-gray-600">{tips}</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-playfair mb-3">Pricing</h3>
+                <p className="text-gray-600">Starting from ${price}</p>
               </div>
             </div>
           </div>

@@ -1,8 +1,20 @@
 import { Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const ContactSection = () => {
   const { t } = useTranslation();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleEmailRedirect = () => {
+    const recipientEmail = 'mamatovviacheslav@gmail.com';
+    const subject = `Inquiry from ${name}`;
+
+    const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}}`;
+    window.location.href = mailtoLink;
+  };
 
   return (
     <section 
@@ -27,6 +39,8 @@ const ContactSection = () => {
               <input
                 type="text"
                 placeholder={t("contact.namePlaceholder")}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-accent transition-colors bg-white/90"
               />
             </div>
@@ -34,6 +48,8 @@ const ContactSection = () => {
               <input
                 type="email"
                 placeholder={t("contact.emailPlaceholder")}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-accent transition-colors bg-white/90"
               />
             </div>
@@ -41,11 +57,14 @@ const ContactSection = () => {
               <textarea
                 placeholder={t("contact.messagePlaceholder")}
                 rows={4}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-accent transition-colors bg-white/90"
               />
             </div>
             <button
-              type="submit"
+              type="button"
+              onClick={handleEmailRedirect}
               className="w-full bg-black text-white py-3 rounded-lg hover:bg-soft-black transition-colors duration-300 flex items-center justify-center gap-2 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] focus:outline-accent"
             >
               {t("contact.submit")}

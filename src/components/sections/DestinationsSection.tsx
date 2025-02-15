@@ -7,36 +7,42 @@ export const destinations = [
     description: "Where East meets West, ancient meets modern",
     image: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b",
     tags: ["Historical", "Cultural", "Urban"],
+    price: 750
   },
   {
     title: "Cappadocia",
     description: "Magical landscapes and hot air balloon adventures",
     image: "https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/03/capadocia_888_3.jpg",
     tags: ["Nature", "Adventure", "Unique"],
+    price: 850
   },
   {
     title: "Antalya",
     description: "Mediterranean paradise with pristine beaches",
     image: "https://images.unsplash.com/photo-1542051841857-5f90071e7989",
     tags: ["Beach", "Luxury", "Resort"],
+    price: 650
   },
   {
     title: "Pamukkale",
     description: "Natural thermal springs and ancient ruins",
     image: "https://images.izmirburaya.com/Images/Deals/1200x1200/4f6023c7-aead-4daa-b2cc-1246d8ffb918.jpg",
     tags: ["Thermal", "Historical"],
+    price: 550
   },
   {
     title: "Ephesus",
     description: "Ancient Roman city and archaeological wonder",
     image: "https://www.kusadasi.biz/_astro/t_ephesus-1.C67GQm7V.jpg",
     tags: ["Archaeological", "Historical", "Cultural"],
+    price: 600
   },
   {
     title: "Black Sea",
     description: "Lush mountains and traditional villages",
     image: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7",
     tags: ["Nature", "Traditional", "Mountains"],
+    price: 900
   },
 ];
 

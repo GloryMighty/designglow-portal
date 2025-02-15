@@ -43,6 +43,7 @@
       "Traditional": "Traditional",
       "Mountains": "Mountains"
     },
+    "priceLabel": "From {{price}}",
     "istanbul": {
       "title": "Istanbul",
       "subtitle": "The Crossroads of Cultures",
