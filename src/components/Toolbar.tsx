@@ -8,10 +8,10 @@ const Toolbar = ({ className }: { className?: string }) => {
   const { t } = useTranslation();
 
   const navItems = [
-    { href: "/destinations", label: "Popular Destinations" },
-    { href: "/experiences", label: "Cultural Experiences" },
-    { href: "/guide", label: "Travel Guide" },
-    { href: "/contact", label: "Contact" },
+    { href: "/destinations", label: t("toolbar.navItems.destinations") },
+    { href: "/experiences", label: t("toolbar.navItems.experiences") },
+    { href: "/guide", label: t("toolbar.navItems.guide") },
+    { href: "/contact", label: t("toolbar.navItems.contact") },
   ];
 
   return (
@@ -22,7 +22,7 @@ const Toolbar = ({ className }: { className?: string }) => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="text-2xl font-playfair text-accent hover:text-accent/80 transition-colors title-3d">
-            Turkish Tourism
+            {t("toolbar.title")}
           </Link>
           
           <nav className="hidden md:flex items-center space-x-6">

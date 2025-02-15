@@ -13,10 +13,10 @@ const Destinations = () => {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // Extract unique categories from destinations
+  // Extract unique categories from destinations, excluding 'Natural'
   const categories = Array.from(
     new Set(destinations.flatMap((destination) => destination.tags))
-  );
+  ).filter((category) => category !== "Natural");
 
   // Filter destinations based on selected category
   const filteredDestinations = selectedCategory
@@ -30,7 +30,7 @@ const Destinations = () => {
       <Toolbar />
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl md:text-5xl font-playfair text-center mb-12 title-3d">
-          {t("destinations.title")}
+          {t("destinations.pageTitle")}
         </h1>
 
         {/* Category Filter */}
@@ -43,7 +43,7 @@ const Destinations = () => {
                 : "bg-gray-200 text-gray-700 hover:bg-gray-300"
             }`}
           >
-            All Destinations
+            {t("destinations.allDestinationsButton")}
           </button>
           {categories.map((category) => (
             <button
@@ -55,7 +55,7 @@ const Destinations = () => {
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
               }`}
             >
-              {category}
+              {t(`destinations.destinationTags.${category}`)}
             </button>
           ))}
         </div>
@@ -79,15 +79,16 @@ const Destinations = () => {
                   <div className="text-white text-center p-6">
                     <h3 className="text-2xl font-playfair mb-2">{destination.title}</h3>
                     <p className="text-sm mb-4">{destination.description}</p>
-                    <div className="flex flex-wrap gap-2 justify-center">
-                      {destination.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-3 py-1 bg-accent rounded-full text-sm"
-                        >
-                          {tag}
-                        </span>
-                      ))}
+                    <div className="text-black flex flex-wrap gap-2 justify-center">
+                      {destination.tags
+                        .map((tag) => (
+                          <span
+                            key={tag}
+                            className="px-3 py-1 bg-accent rounded-full text-sm"
+                          >
+                            {t(`destinations.destinationTags.${tag}`)}
+                          </span>
+                        ))}
                     </div>
                   </div>
                 </div>
@@ -99,7 +100,7 @@ const Destinations = () => {
         {/* No Results Message */}
         {filteredDestinations.length === 0 && (
           <div className="text-center text-gray-500 mt-12">
-            <p>No destinations found for this category.</p>
+            <p>{t("destinations.noDestinationsMessage")}</p>
           </div>
         )}
       </div>

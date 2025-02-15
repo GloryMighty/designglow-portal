@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Toolbar from "../components/Toolbar";
 import HeroSection from "../components/sections/HeroSection";
 import DestinationsSection from "../components/sections/DestinationsSection";
@@ -7,6 +8,8 @@ import TravelGuideSection from "../components/sections/TravelGuideSection";
 import ContactSection from "../components/sections/ContactSection";
 
 const Index = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -40,7 +43,7 @@ const Index = () => {
       <TravelGuideSection className="three-d-title" />
       <ContactSection className="three-d-title" />
       <footer className="py-8 text-center text-gray-600 bg-white">
-        <p>&copy; {new Date().getFullYear()} Turkish Tourism. All rights reserved.</p>
+        <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
       </footer>
     </div>
   );

@@ -24,7 +24,7 @@ export const destinations = [
     title: "Pamukkale",
     description: "Natural thermal springs and ancient ruins",
     image: "https://images.izmirburaya.com/Images/Deals/1200x1200/4f6023c7-aead-4daa-b2cc-1246d8ffb918.jpg",
-    tags: ["Natural", "Thermal", "Historical"],
+    tags: ["Thermal", "Historical"],
   },
   {
     title: "Ephesus",

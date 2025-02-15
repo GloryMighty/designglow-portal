@@ -1,48 +1,135 @@
-
 {
   "languages": {
     "en": "İngilizce",
     "tr": "Türkçe",
     "ar": "Arapça"
   },
+  "hero": {
+    "welcome": "TÜRKİYE'YE HOŞ GELDİNİZ",
+    "title": "Sonsuz Güzelliğin Ülkesini Keşfedin",
+    "description": "Türkiye'nin büyüsünü yaşayın: Burada antik tarih modern kültürle buluşur ve her an unutulmaz bir anıya dönüşür"
+  },
+  "destinations": {
+    "title": "Popüler Destinasyonlar",
+    "about": "Bu Destinasyon Hakkında",
+    "bestTime": "Ziyaret İçin En İyi Zaman",
+    "seasonalInfo": "Yerel hava koşullarını kontrol edin ve seyahatinizi buna göre planlayın.",
+    "tips": "Yerel Seyahat İpuçları",
+    "localTips": "Her zaman yerel geleneklere saygı duyun ve yeni deneyimlere açık olun.",
+    "pageTitle": "Türkiye'nin Destinasyonlarını Keşfedin",
+    "allDestinationsButton": "Tüm Destinasyonlar",
+    "noDestinationsMessage": "Bu kategoride hiç destinasyon bulunamadı.",
+    "destinationTags": {
+      "Historical": "Tarihi",
+      "Cultural": "Kültürel", 
+      "Urban": "Kentsel",
+      "Nature": "Doğa",
+      "Adventure": "Macera", 
+      "Unique": "Benzersiz",
+      "Beach": "Plaj",
+      "Luxury": "Lüks",
+      "Resort": "Resort",
+      "Thermal": "Termal",
+      "Archaeological": "Arkeolojik",
+      "Traditional": "Geleneksel",
+      "Mountains": "Dağlar"
+    },
+    "istanbul": {
+      "title": "İstanbul",
+      "subtitle": "Kültürlerin Kavşağı",
+      "description": "İstanbul, Avrupa ve Asya'yı birleştiren zengin bir tarihe ve canlı modern cazibesi olan bir şehir. Hareketli pazarların yanında antik alanları keşfedin.",
+      "highlights": ["Tarihi Sultanahmet", "Boğaz Boğazı", "Kapalıçarşı"]
+    },
+    "cappadocia": {
+      "title": "Kapadokya",
+      "subtitle": "Peri Bacaları Ülkesi",
+      "description": "Kapadokya, benzersiz manzarası, kaya oluşumları ve antik mağara evleriyle ünlüdür. Muhteşem vadilerin üzerinde sıcak hava balonu deneyimini yaşayın.",
+      "highlights": ["Sıcak Hava Balonu Turları", "Antik Yeraltı Şehirleri", "Benzersiz Kaya Oluşumları"]
+    },
+    "antalya": {
+      "title": "Antalya",
+      "subtitle": "Türk Rivierası'nın İncisi",
+      "description": "Antalya, harika plajlar, zengin tarih ve canlı gece hayatı sunar. Antik kalıntıları keşfedin ve Akdeniz'in pırıl pırıl sularında dinlenin.",
+      "highlights": ["Güzel Plajlar", "Antik Kalıntılar", "Canlı Gece Hayatı"]
+    },
+    "pamukkale": {
+      "title": "Pamukkale",
+      "subtitle": "Travertenlerin Pamuk Kalesi",
+      "description": "Pamukkale, beyaz traverten terasları ve mineral açısından zengin termal suları ile ünlüdür. Bu doğal harikayı seyrederken rahatlatıcı bir banyonun keyfini çıkarın.",
+      "highlights": ["Traverten Terasları", "Termal Kaynaklar", "Yakınındaki Antik Kalıntılar"]
+    },
+    "ephesus": {
+      "title": "Efes",
+      "subtitle": "Harikalar Antik Kenti",
+      "description": "Efes, iyi korunmuş kalıntıları ve antik mimarisiyle tanınır. Celsus Kütüphanesi, Anfitiyatro ve Artemis Tapınağı'nı keşfedin.",
+      "highlights": ["Celsus Kütüphanesi", "Antik Tiyatro", "Artemis Tapınağı"]
+    },
+    "blacksea": {
+      "title": "Karadeniz",
+      "subtitle": "Gizemli Kıyı Bölgesi",
+      "description": "Türkiye'nin Karadeniz bölgesi, yeşil manzaralar, sevimli kıyı kasabaları ve zengin bir kültürel mirasa sahiptir. Gizli hazinelerini keşfedin ve yerel misafirperverliğin tadını çıkarın.",
+      "highlights": ["Manzaralı Kıyılar", "Yeşil Doğa", "Geleneksel Kültür"]
+    }
+  },
+  "experiences": {
+    "title": "Türkiye'de Kültürel Deneyimler",
+    "subtitle": "Türk Kültürüne Dalın",
+    "description": "Türkiye'nin zengin kültürel mirasını sergileyen benzersiz ve otantik deneyimleri keşfedin.",
+    "experienceTypes": {
+      "culturalTours": {
+        "name": "Kültür Turları",
+        "description": "Tarihi yerlerin rehberli keşifleri"
+      },
+      "photography": {
+        "name": "Fotoğrafçılık",
+        "description": "Nefes kesici Türk manzaralarını yakalayın"
+      },
+      "culinary": {
+        "name": "Mutfak",
+        "description": "Geleneksel Türk mutfak deneyimleri"
+      }
+    }
+  },
+  "travelGuide": {
+    "title": "Seyahat Rehberi",
+    "bestTime": "Ziyaret İçin En İyi Zaman",
+    "bestTimeDesc": "İlkbahar (Nisan-Mayıs) ve Sonbahar (Eylül-Kasım) hem tarihi alanları hem de doğal harikaları keşfetmek için mükemmel ılık havaya sahiptir.",
+    "gettingAround": "Ulaşım",
+    "gettingAroundDesc": "Türkiye, iç hatlar uçuşları, yüksek hızlı trenler ve büyük şehirleri birbirine bağlayan konforlu otobüsler dahil olmak üzere mükemmel ulaşım seçenekleri sunar."
+  },
+  "contact": {
+    "title": "Yolculuğunuzu Planlayın",
+    "namePlaceholder": "Adınız",
+    "emailPlaceholder": "E-posta Adresiniz",
+    "messagePlaceholder": "Hayalinizdeki Türkiye macerası hakkında bize anlatın",
+    "submit": "Sorgu Gönder"
+  },
   "navigation": {
     "home": "Ana Sayfa",
     "destinations": "Destinasyonlar",
     "contact": "İletişim"
   },
-  "destinations": {
-    "istanbul": {
-      "title": "İstanbul",
-      "subtitle": "Doğu ile Batının Buluştuğu Yer",
-      "description": "İstanbul, iki kıta üzerine kurulu dünyadaki tek şehir olarak binlerce yıllık insan tarihinin tanığıdır. Dünya ticaretinin ve kültürünün merkezi olan İstanbul, ziyaretçilerine zamanda unutulmaz bir yolculuk sunuyor.",
-      "highlights": [
-        "Ayasofya",
-        "Sultan Ahmet Camii",
-        "Kapalı Çarşı",
-        "Boğaz"
-      ]
-    },
-    "cappadocia": {
-      "title": "Kapadokya",
-      "subtitle": "Güzel Atlar Diyarı",
-      "description": "Kapadokya'nın 'peri bacaları' ve kaya kiliseleriyle dolu gerçeküstü manzarası, bambaşka bir dünya deneyimi yaratıyor. Bölgenin benzersiz jeolojik özellikleri ve zengin tarihi, onu Türkiye'nin en büyüleyici destinasyonlarından biri yapıyor.",
-      "highlights": [
-        "Sıcak Hava Balonu Turları",
-        "Yeraltı Şehirleri",
-        "Mağara Oteller",
-        "Kaya Kiliseler"
-      ]
-    },
-    "antalya": {
-      "title": "Antalya",
-      "subtitle": "Akdeniz'in İncisi",
-      "description": "Antalya, antik kalıntıları ve modern lüksü tertemiz Akdeniz plajlarıyla birleştiriyor. Mükemmel iklimi ve zengin tarihi, hem dinlenme hem de kültürel keşif için ideal bir destinasyon yapıyor.",
-      "highlights": [
-        "Konyaaltı Plajı",
-        "Kaleiçi",
-        "Düden Şelaleleri",
-        "Antik Kentler"
-      ]
+  "header": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "blog": {
+    "sustainableTourism": {
+      "title": "Sürdürülebilir Turizm",
+      "content": "Sürdürülebilir seyahat uygulamaları hakkında bilgi edinin."
     }
+  },
+  "toolbar": {
+    "title": "Türk Turizmi",
+    "navItems": {
+      "destinations": "Popüler Destinasyonlar",
+      "experiences": "Kültürel Deneyimler", 
+      "guide": "Seyahat Rehberi",
+      "contact": "İletişim"
+    }
+  },
+  "footer": {
+    "copyright": " {year} Türk Turizmi. Tüm hakları saklıdır."
   }
 }

@@ -5,19 +5,22 @@ import { AnimatedIcon } from "../ui/AnimatedIcon";
 
 const experiences = [
   { 
-    name: "Cultural Tours", 
-    icon: <AnimatedIcon Icon={Landmark} size={6} />, 
-    description: "Guided explorations of historical sites" 
+    key: "culturalTours",
+    icon: <AnimatedIcon Icon={Landmark} size={6} />,
+    name: "Cultural Tours",
+    description: "Guided explorations of historical sites"
   },
   { 
-    name: "Photography", 
-    icon: <AnimatedIcon Icon={Camera} size={6} />, 
-    description: "Capture breathtaking Turkish landscapes" 
+    key: "photography", 
+    icon: <AnimatedIcon Icon={Camera} size={6} />,
+    name: "Photography",
+    description: "Capture breathtaking Turkish landscapes"
   },
   { 
-    name: "Culinary", 
-    icon: <AnimatedIcon Icon={Utensils} size={6} />, 
-    description: "Traditional Turkish cuisine experiences" 
+    key: "culinary", 
+    icon: <AnimatedIcon Icon={Utensils} size={6} />,
+    name: "Culinary",
+    description: "Traditional Turkish cuisine experiences"
   },
 ];
 
@@ -66,7 +69,7 @@ const ExperiencesSection = () => {
         >
           {experiences.map((experience, index) => (
             <motion.div 
-              key={experience.name}
+              key={experience.key}
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: index * 0.5 }}
@@ -75,8 +78,12 @@ const ExperiencesSection = () => {
               <div className="flex items-center justify-center mb-6 text-accent">
                 {experience.icon}
               </div>
-              <h3 className="text-gray-600 font-playfair text-center mb-4">{experience.name}</h3>
-              <p className="text-gray-600 text-center">{experience.description}</p>
+              <h3 className="text-gray-600 font-playfair text-center mb-4">
+                {t(`experiences.experienceTypes.${experience.key}.name`)}
+              </h3>
+              <p className="text-gray-600 text-center">
+                {t(`experiences.experienceTypes.${experience.key}.description`)}
+              </p>
             </motion.div>
           ))}
         </motion.div>
