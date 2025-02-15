@@ -1,76 +1,45 @@
-# Welcome to your Lovable project
+# DesignGlow Portal
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/2526a7e2-e23b-49c2-b98a-c314251ac41e
+A modern, responsive tourism portal built with React, Vite, and Tailwind CSS.
 
-## How can I edit this code?
+## Getting Started
 
-There are several ways of editing your application.
+### Prerequisites
+- Node.js (v16 or later)
+- npm (v8 or later)
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/2526a7e2-e23b-49c2-b98a-c314251ac41e) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/your-username/designglow-portal.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd designglow-portal
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Development Scripts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- `npm run dev`: Start development server
+- `npm run build`: Create production build
+- `npm run preview`: Preview production build
+- `npm run lint`: Run linter
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-### Lovable Deployment
-
-Simply open [Lovable](https://lovable.dev/projects/2526a7e2-e23b-49c2-b98a-c314251ac41e) and click on Share -> Publish.
+## Deployment
 
 ### Vercel Deployment
 
 #### Prerequisites
 - Vercel account
-- Project already connected to GitHub repository
+- GitHub repository
 
 #### Deployment Steps
 1. Log in to [Vercel Dashboard](https://vercel.com)
@@ -88,6 +57,14 @@ No specific environment variables are required for this project.
 - Check that the build script works locally before deploying
 - Verify that `vercel.json` is correctly configured for SPA routing
 
-## I want to use a custom domain - is that possible?
+## Contributing
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
