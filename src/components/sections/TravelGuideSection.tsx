@@ -7,8 +7,8 @@ const TravelGuideSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-[#808000] bg-opacity-10">
+      <div className="container mx-auto px-4 ">
         <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16 animate-on-scroll opacity-0 title-3d">
           TRAVEL GUIDE
         </h2>

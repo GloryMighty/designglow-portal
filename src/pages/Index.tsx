@@ -42,7 +42,7 @@ const Index = () => {
       <ExperiencesSection className="three-d-title" />
       <TravelGuideSection className="three-d-title" />
       <ContactSection className="three-d-title" />
-      <footer className="py-8 text-center text-gray-600 bg-white">
+      <footer className="py-8 text-center text-gray-600 bg-[#808000] bg-opacity-10">
         <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
       </footer>
     </div>

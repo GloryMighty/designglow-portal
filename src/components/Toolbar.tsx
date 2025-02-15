@@ -27,9 +27,9 @@ const Toolbar = ({ className }: { className?: string }) => {
       "fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-sm",
       className
     )}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 ">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-playfair text-accent hover:text-accent/80 transition-colors title-3d">
+          <Link to="/" className="text-2xl font-playfair text-accent hover:text-accent/10 transition-colors title-3d">
             {t("toolbar.title")}
           </Link>
           
@@ -39,7 +39,7 @@ const Toolbar = ({ className }: { className?: string }) => {
               <Link
                 key={item.href}
                 to={item.href}
-                className="text-soft-black text-sm hover:text-accent transition-colors three-d-title"
+                className="text-soft-black text-lg hover:text-accent transition-colors three-d-title"
                 style={{ fontSize: '1rem', textShadow: '0.5px 0.5px 0 rgba(0, 0, 0, 0.1)' }}
               >
                 {item.label}

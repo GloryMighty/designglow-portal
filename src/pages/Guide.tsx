@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useNavigate } from 'react-router-dom';
 import Toolbar from "../components/Toolbar";
-import TravelGuideSection from "../components/sections/TravelGuideSection";
 
 // Import 3D title styles
 import "../styles/LogoTitle3D.css";
@@ -12,7 +11,7 @@ import { motion } from 'framer-motion';
 interface BlogPost {
   id: number;
   title: string;
-  excerpt: string;
+  excerpt: string;  
   content: string;
   imageUrl: string;
   readTime: number;
@@ -73,14 +72,8 @@ const Guide: React.FC = () => {
 
   return (
     <div 
-      className="min-h-screen bg-cover bg-center bg-no-repeat relative" 
-      style={{ 
-        backgroundImage: 'url(/images/turkey-flag-map-background.svg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        opacity: 0.9
-      }}
+      
+      
     >
       <div className="absolute inset-0"></div>
       
@@ -88,9 +81,9 @@ const Guide: React.FC = () => {
         <Toolbar />
         
         <div className="container mx-auto px-4 py-12">
-          <h1 className="title-3d text-4xl font-bold text-center mb-12 text-gray-800">
+          <h1 className="title-3d text-4xl text-center mb-12 text-white-00">
             <br />
-            Discover Turkey: A Comprehensive Travel Guide
+            HELPFUL BLOGPOSTS
           </h1>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (

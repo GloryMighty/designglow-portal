@@ -10,14 +10,14 @@
   Usage: Apply the 'title-3d' class to title elements
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
 .title-3d {
   /* Modern font with Montserrat */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
   
-  /* Soft white color with enhanced 3D effect */
+  /* Soft white color with enhanced 3D effect */  
   color: #ffffff;
   
   /* Enhanced 3D effect using text shadow */
