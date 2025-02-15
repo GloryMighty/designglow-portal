@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LanguageSelector from "./LanguageSelector";
 import { cn } from "@/lib/utils";
 import "../styles/LogoTitle3D.css";
+import "../styles/Font3D.css";
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // Import icons for mobile menu
 
@@ -38,7 +39,8 @@ const Toolbar = ({ className }: { className?: string }) => {
               <Link
                 key={item.href}
                 to={item.href}
-                className="text-soft-black text-sm hover:text-accent transition-colors"
+                className="text-soft-black text-sm hover:text-accent transition-colors three-d-title"
+                style={{ fontSize: '1rem', textShadow: '0.5px 0.5px 0 rgba(0, 0, 0, 0.1)' }}
               >
                 {item.label}
               </Link>
@@ -66,12 +68,12 @@ const Toolbar = ({ className }: { className?: string }) => {
 
         {/* Mobile Sidebar */}
         {isMobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 bg-white/95 z-40">
+          <div className="md:hidden fixed inset-0 bg-white z-40">
             <div className="relative h-full">
               {/* Close Button */}
               <button 
                 onClick={toggleMobileMenu} 
-                className="absolute top-4 right-4 text-soft-black hover:text-accent transition-colors z-50"
+                className="absolute top-4 right-4 text-soft-black hover:text-accent transition-colors z-50 bg-white p-2 rounded-full shadow-md"
                 aria-label="Close mobile menu"
               >
                 <X size={24} />
@@ -83,7 +85,8 @@ const Toolbar = ({ className }: { className?: string }) => {
                     key={item.href}
                     to={item.href}
                     onClick={toggleMobileMenu}
-                    className="text-soft-black text-lg hover:text-accent transition-colors block py-2 text-center"
+                    className="text-soft-black text-lg hover:text-accent transition-colors block py-3 text-center bg-white rounded-lg shadow-sm three-d-title"
+                    style={{ fontSize: '1.125rem', textShadow: '0.5px 0.5px 0 rgba(0, 0, 0, 0.1)' }}
                   >
                     {item.label}
                   </Link>

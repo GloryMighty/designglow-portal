@@ -57,9 +57,9 @@ const ExperiencesSection = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-3xl md:text-4xl font-playfair text-center mb-16 animate-on-scroll opacity-0 title-3d"
+          className="text-4xl md:text-5xl font-playfair text-center mb-16 animate-on-scroll opacity-0 title-3d"
         >
-          {t("experiences.title")}
+          {t("experiences.title").toUpperCase()}
         </motion.h2>
         <motion.div 
           initial={{ y: 100, opacity: 0 }}

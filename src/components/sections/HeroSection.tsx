@@ -1,7 +1,7 @@
-
 import { MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "../LanguageSelector";
+import "../../styles/GradientText.css";
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -13,10 +13,10 @@ const HeroSection = () => {
         <span className="text-accent inline-block mb-4 font-medium tracking-wider animate-fade-in">
           {t("hero.welcome")}
         </span>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair mb-6 text-white animate-fade-up">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair mb-6 gradient-text-white animate-fade-up">
           {t("hero.title")}
         </h1>
-        <p className="text-gray-200 max-w-xl mx-auto mb-8 animate-fade-up delay-100">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-up delay-100 gradient-text-white">
           {t("hero.description")}
         </p>
         <MapPin className="w-6 h-6 mx-auto mt-12 animate-bounce text-accent" />

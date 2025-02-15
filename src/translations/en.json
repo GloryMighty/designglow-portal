@@ -5,16 +5,16 @@
     "ar": "Arabic"
   },
   "toolbar": {
-    "title": "Turkish Tourism",
+    "title": "TT",
     "navItems": {
-      "destinations": "Popular Destinations",
-      "experiences": "Cultural Experiences",
-      "guide": "Travel Guide",
-      "contact": "Contact"
+      "destinations": "DESTINATIONS", 
+      "experiences": "CULTURAL EXPERIENCES",
+      "guide": "TRAVEL GUIDE",
+      "contact": "CONTACT"  
     }
   },
   "hero": {
-    "welcome": "WELCOME TO TURKEY",
+    "welcome": "WELCOME TO TURKISH TOURISM",
     "title": "Discover the Land of Endless Beauty",
     "description": "Experience the magic of Turkey: where ancient history meets modern culture, and every moment becomes an unforgettable memory"
   },

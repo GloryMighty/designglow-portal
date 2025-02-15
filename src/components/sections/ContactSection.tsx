@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
@@ -30,8 +30,8 @@ const ContactSection = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-playfair text-center mb-16 animate-on-scroll opacity-100 title-3d text-white">
-          {t("contact.title")}
+        <h2 className="text-4xl md:text-5xl font-playfair text-center mb-16 animate-on-scroll opacity-0 title-3d">
+          {t("contact.title").toUpperCase()}
         </h2>
         <div className="max-w-lg mx-auto">
           <form className="space-y-6 animate-on-scroll opacity-90">
@@ -68,7 +68,7 @@ const ContactSection = () => {
               className="w-full bg-black text-white py-3 rounded-lg hover:bg-soft-black transition-colors duration-300 flex items-center justify-center gap-2 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] focus:outline-accent"
             >
               {t("contact.submit")}
-              <Phone className="w-4 h-4" />
+              <Mail className="w-4 h-4" />
             </button>
           </form>
         </div>
