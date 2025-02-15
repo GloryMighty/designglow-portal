@@ -45,6 +45,11 @@ const Toolbar = ({ className }: { className?: string }) => {
             ))}
           </nav>
           
+          {/* Language Selector */}
+          <div className="hidden md:block">
+            <LanguageSelector />
+          </div>
+          
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             {!isMobileMenuOpen && (
@@ -57,8 +62,6 @@ const Toolbar = ({ className }: { className?: string }) => {
               </button>
             )}
           </div>
-          
-          <LanguageSelector />
         </div>
 
         {/* Mobile Sidebar */}
@@ -75,9 +78,6 @@ const Toolbar = ({ className }: { className?: string }) => {
               </button>
 
               <div className="flex flex-col space-y-4 p-4 pt-16 h-full">
-                <div className="mb-4 flex justify-center">
-                  <LanguageSelector />
-                </div>
                 {navItems.map((item) => (
                   <Link
                     key={item.href}

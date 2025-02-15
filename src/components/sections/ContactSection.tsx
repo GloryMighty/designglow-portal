@@ -9,7 +9,7 @@ const ContactSection = () => {
   const [message, setMessage] = useState('');
 
   const handleEmailRedirect = () => {
-    const recipientEmail = 'mamatovviacheslav@gmail.com';
+    const recipientEmail = 'vimawebsolutions@gmail.com';
     const subject = `Inquiry from ${name}`;
 
     const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}}`;

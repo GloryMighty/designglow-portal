@@ -62,7 +62,31 @@ This project is built with .
 
 ## How can I deploy this project?
 
+### Lovable Deployment
+
 Simply open [Lovable](https://lovable.dev/projects/2526a7e2-e23b-49c2-b98a-c314251ac41e) and click on Share -> Publish.
+
+### Vercel Deployment
+
+#### Prerequisites
+- Vercel account
+- Project already connected to GitHub repository
+
+#### Deployment Steps
+1. Log in to [Vercel Dashboard](https://vercel.com)
+2. Import the GitHub repository
+3. Vercel will automatically detect the following configurations:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+   - Install Command: `npm install`
+
+#### Environment Variables
+No specific environment variables are required for this project.
+
+#### Troubleshooting
+- Ensure all dependencies are correctly listed in `package.json`
+- Check that the build script works locally before deploying
+- Verify that `vercel.json` is correctly configured for SPA routing
 
 ## I want to use a custom domain - is that possible?
 

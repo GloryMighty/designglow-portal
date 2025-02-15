@@ -1,3 +1,7 @@
+/**
+ * Copyright 2025 @VIMA Solutions, All Rights Reserved.
+ */
+
 import { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -7,7 +11,7 @@ import { ArrowLeft, MapPin, Calendar, Info } from "lucide-react";
 const images: Record<string, string> = {
   istanbul: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b",
   cappadocia: "https://images.unsplash.com/photo-1570854009466-78800d0c743a",
-  antalya: "https://images.unsplash.com/photo-1542051841857-5f90071e7989",
+  antalya: "https://blog.obilet.com/wp-content/uploads/2021/11/anagorsel-min-scaled.jpeg",
   pamukkale: "https://images.unsplash.com/photo-1558888400-4a8cde7b6e9f",
   ephesus: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf",
   blacksea: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
@@ -110,4 +114,4 @@ const Destination = () => {
   );
 };
 
-export default Destination;
+  export default Destination;
