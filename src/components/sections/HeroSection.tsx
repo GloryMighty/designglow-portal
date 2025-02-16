@@ -7,16 +7,16 @@ const HeroSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-[url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200')] bg-cover bg-center">
+    <section className="min-h-screen flex items-center justify-center relative bg-[url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200')] bg-cover bg-center bg-no-repeat">
       <div className="absolute inset-0 bg-black bg-opacity-50" />
-      <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="container mx-auto px-4 py-8 md:py-12 text-center relative z-10">
         <span className="text-accent inline-block mb-4 font-medium tracking-wider animate-fade-in">
           {t("hero.welcome")}
         </span>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair mb-6 gradient-text-white animate-fade-up">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair mb-6 gradient-text-white animate-fade-up text-white drop-shadow-lg">
           {t("hero.title")}
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-up delay-100 gradient-text-white">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-up delay-100 gradient-text-white text-white drop-shadow-md">
           {t("hero.description")}
         </p>
         <MapPin className="w-6 h-6 mx-auto mt-12 animate-bounce text-accent" />
