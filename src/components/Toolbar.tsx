@@ -15,25 +15,25 @@ const Toolbar = ({ className }: { className?: string }) => {
     { 
       href: "/destinations", 
       label: t("toolbar.navItems.destinations"),
-      color: "text-[#808000]",
+      color: "text-[#77BB77]",
       borderColor: "border-[#808000]" 
     },
     { 
       href: "/experiences", 
       label: t("toolbar.navItems.experiences"),
-      color: "text-[#808000]",
+      color: "text-[#77BB77]",
       borderColor: "border-[#808000]" 
     },
     { 
       href: "/guide", 
       label: t("toolbar.navItems.guide"),
-      color: "text-[#808000]",
+      color: "text-[#77BB77]",
       borderColor: "border-[#808000]" 
     },
     { 
       href: "/contact", 
       label: t("toolbar.navItems.contact"),
-      color: "text-[#808000]",
+      color: "text-[#77BB77]",
       borderColor: "border-[#808000]" 
     },
   ];
@@ -44,12 +44,12 @@ const Toolbar = ({ className }: { className?: string }) => {
 
   return (
     <div className={cn(
-      "fixed top-0 left-0 right-0 z-50 text-white bg-white/80 backdrop-blur-md shadow-sm",
+      "fixed top-0 left-0 right-0 z-50 text-white bg-white backdrop-blur-md shadow-sm",
       className
     )}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl md:text-3xl font-playfair text-accent hover:text-accent/10 transition-colors title-3d">
+          <Link to="/" className="text-2xl md:text-3xl font-playfair text-white text-accent hover:text-accent/10 transition-colors title-3d">
             {t("toolbar.title")}
           </Link>
           
@@ -63,7 +63,7 @@ const Toolbar = ({ className }: { className?: string }) => {
                   text-lg hover:text-accent transition-colors three-d-title ${item.color} 
                   border-b-2 hover:border-opacity-100 
                   ${item.borderColor} 
-                  border-opacity-50 pb-1
+                  border-opacity-100 pb-1
                 `}
                 style={{ 
                   fontSize: '1rem', 
@@ -76,7 +76,7 @@ const Toolbar = ({ className }: { className?: string }) => {
           </nav>
           
           {/* Language Selector */}
-          <div className="hidden md:block">
+          <div className="hidden md:block text-black icons-black">
             <LanguageSelector />
           </div>
           
@@ -117,7 +117,7 @@ const Toolbar = ({ className }: { className?: string }) => {
                       text-lg hover:text-accent transition-colors 
                       block py-3 text-center bg-white rounded-lg 
                       shadow-sm three-d-title ${item.color}
-                      border-2 ${item.borderColor} border-opacity-50 
+                      border-2 ${item.borderColor} border-opacity-100 
                       hover:border-opacity-100
                     `}
                     style={{ 
