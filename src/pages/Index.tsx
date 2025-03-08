@@ -6,7 +6,6 @@ import DestinationsSection from "../components/sections/DestinationsSection";
 import ExperiencesSection from "../components/sections/ExperiencesSection";
 import TravelGuideSection from "../components/sections/TravelGuideSection";
 import ContactSection from "../components/sections/ContactSection";
-import Link from "next/link"; // Add this import statement
 
 const Index = () => {
   const { t } = useTranslation();
@@ -45,9 +44,6 @@ const Index = () => {
       <ContactSection className="three-d-title" />
       <footer className="py-8 text-center text-gray-600 bg-[#808000] bg-opacity-10">
         <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
-        <Link href="https://vimawebs.com">
-          By VIMA with ❤️
-        </Link>
       </footer>
     </div>
   );
