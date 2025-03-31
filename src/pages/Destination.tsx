@@ -1,5 +1,5 @@
 /**
- * Copyright 2025 @VIMA Solutions, All Rights Reserved.
+ * Copyright 2025 @Target Reached, All Rights Reserved.
  */
 
 import { useEffect } from "react";
